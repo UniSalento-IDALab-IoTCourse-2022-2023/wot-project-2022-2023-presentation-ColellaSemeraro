@@ -11,14 +11,14 @@
   <body>
 
       <header>
-        <h1>Sample Presentation Repository</h1>
-        <p></p>
+        <h1>IoT Digital Twin</h1>
+        <p>Un Digital Twin per lo Sport del Calcio</p>
       </header>
 
       <<div id="banner">
         <span id="logo"></span>
 
-        <a href="" class="button fork"><strong>View On GitHub</strong></a>
+        <a href="https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/wot-project-presentation-gianluseme" class="button fork"><strong>View On GitHub</strong></a>
 
       </div><!-- end banner -->
 
@@ -35,10 +35,28 @@
             <a href="#presentazione-concept">Presentazione del concept</a>
           </li>
           <li class="tag-h2">
-            <a href="#funzionalita-e-architettura">Funzionalità e architettura</a>
+            <a href="#funzionalita">Funzionalità</a>
           </li>
           <li class="tag-h2">
-            <a href="#istruzioni">Istruzioni per far funzionare il prototipo</a>
+            <a href="#architettura">Architettura del sistema</a>
+          </li>
+          <li class="tag-h2">
+            <a href="#frontend">Front-End</a>
+          </li>
+          <li class="tag-h2">
+            <a href="#back-end-autenticazione">Back-End Autenticazione</a>
+          </li>
+          <li class="tag-h2">
+            <a href="#back-end-allenamenti">Back-End Allenamenti</a>
+          </li>
+          <li class="tag-h2">
+            <a href="#back-end-hrv">Back-End HRV</a>
+          </li>
+          <li class="tag-h2">
+            <a href="#lambda-hrv-storage">Script Python Lambda HRV Storage</a>
+          </li>
+          <li class="tag-h2">
+            <a href="#lambda-hrv-realtime">Script Python Lambda HRV Real Time</a>
           </li>
         </ul>
       </nav>
@@ -47,14 +65,16 @@
           <span class="anchor" id="nome-del-progetto-e-repository-github"></span>
           <h2 >Nome del progetto e repository github</h2>
 
-          <p>Nome del progetto: BlaBlaBla</p>
-          <p>Repository del sito di presentazione progetto: <a href="https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/SamplePresentationRepository">https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/SamplePresentationRepository</a></p>
-          <p>Tutti i Repository del prototipo (codice):
+          <p><strong>Nome del progetto: IoTDigitalTwin</strong></p>
+          <p>Repository del sito di presentazione progetto: <a href="https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/wot-project-presentation-gianluseme">https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/SamplePresentationRepository</a></p>
+          <p>Tutti i Repository del progetto:
             <ul>
-              <li><a href="https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/SamplePresentationRepository">Parte 1</a></li>
-              <li><a href="https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/SamplePresentationRepository">Parte 2</a></li>
-              <li><a href="https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/SamplePresentationRepository">Parte 3</a></li>
-            </ul>
+              <li><a href="https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/wot-project-2022-2023-DigitalTwinFrontendAngular-ColellaSemeraro.git">Front-End</a></li>
+              <li><a href="https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/wot-project-2022-2023-AuthBackEndService-ColellaSemeraro.git">Servizio Back-End di Autenticazione</a></li>
+              <li><a href="https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/wot-project-2022-2023-TrainingBackEndService-ColellaSemeraro.git">Servizio Back-End di Gestione degli Allenamenti</a></li>
+              <li><a href="https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/wot-project-2022-2023-HRVBackEndService-ColellaSemeraro.git">Servizio di Back-End di Gestione delle Metriche HRV</a></li>
+              <li><a href="https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/wot-project-2022-2023-LambdaPythonScripts-ColellaSemeraro.git">Script di Python su AWS Lambda</a></li>
+        </ul>
           </p>
 
 
@@ -63,7 +83,7 @@
           <span class="anchor" id="membri-del-team"></span>
           <h2>Membri del team</h2>
 
-          <table>
+          <table  style="margin-left: -17px">
             <thead>
               <tr>
                 <th style="text-align: center">Matricola</th>
@@ -75,25 +95,18 @@
             </thead>
             <tbody>
               <tr>
-                <td style="text-align: center">123456</td>
-                <td style="text-align: center">Abc</td>
-                <td style="text-align: center">Jkl</td>
-                <td style="text-align: center">abc.jkl@studenti.polito.it</td>
-                <td style="text-align: center">abc.jkl</td>
+                <td style="text-align: center">20087391</td>
+                <td style="text-align: center">Semeraro</td>
+                <td style="text-align: center">Gianluigi</td>
+                <td style="text-align: center">gianluigi.semeraro@studenti.unisalento.it</td>
+                <td style="text-align: center">gianluseme</td>
               </tr>
               <tr>
-                <td style="text-align: center">654321</td>
-                <td style="text-align: center">Def</td>
-                <td style="text-align: center">Mno</td>
-                <td style="text-align: center">def.mno@gmail.com</td>
-                <td style="text-align: center">def_mno</td>
-              </tr>
-              <tr>
-                <td style="text-align: center">321456</td>
-                <td style="text-align: center">Ghi</td>
-                <td style="text-align: center">Pqr</td>
-                <td style="text-align: center">ghi.pqr@libero.it</td>
-                <td style="text-align: center">ghipqr</td>
+                <td style="text-align: center">20080996</td>
+                <td style="text-align: center">Colella</td>
+                <td style="text-align: center">Simone</td>
+                <td style="text-align: center">simone.colella@studenti.unisalento.it</td>
+                <td style="text-align: center">SimoColella</td>
               </tr>
             </tbody>
           </table>
@@ -105,60 +118,303 @@
           <h2>Presentazione del progetto</h2>
 
           <p>
-            Inserire una breve descrizione del vostro progetto: problema a cui risponde,
-            principali caratteristiche, ecc
+            Il progetto IoT Digital Twin si propone di sviluppare un sistema innovativo di Digital Twin per l’ambito sportivo, con particolare attenzione allo sport del calcio.
+            L’obiettivo principale è fornire uno strumento completo e altamente fruibile che consenta il monitoraggio approfondito degli atleti attraverso l’acquisizione di dati provenienti da smartwatch e dispositivi Polar.
+            <br>
+            All'interno del sistema, un allenatore è in grado di monitorare gli allenamenti (e i relativi risultati) dei calciatori che segue, con la possibilità di assegnargliene di nuovi con il supporto del digital twin.
+            <br>
+            <br>
+            L'implementazione principale è stata suddivisa in due parti distinte:
+            <ul>
+              <li>Design dell’architettura Cloud AWS in cui distribuire il codice implementato. Contestualmente, sono state individuate e studiate le tecnologie AWS integrate nell’architettura.</li>
+              <li>Design della web application e realizzazione di un semplice script contenente, tra le varie features discusse nel proseguimento della trattazione, un semplice algoritmo di Machine Learning per la predizione dell’intensità di allenamento da suggerire al coach.</li>
+            </ul>
+
           </p>
 
 
         </div>
         <div class="subsection">
-          <span class="anchor" id="funzionalita-e-architettura"></span>
-          <h2>Funzionalità e architettura</h2>
+          <span class="anchor" id="funzionalita"></span>
+          <h2>Funzionalità</h2>
 
           <span class="anchor" id="funzionalita-complete-del-social-network"></span>
           <h3>Funzionalità complete del progetto</h3>
 
-          <p>Inserire una tabella in cui sono elencate (ad alto livello) TUTTI i requisiti del vostro progetto</p>
+          <p>Di seguito sono elencati i requisiti funzionali del progetto</p>
 
           <table>
             <thead>
               <tr>
-                <th style="text-align: center">Funzionalità complete</th>
+                <th style="text-align: center">Funzionalità</th>
                 <th style="text-align: center">Descrizione</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td style="text-align: center">Nome della funzionalità A</td>
-                <td style="text-align: center">Breve descrizione della funzionalità A</td>
+                <td style="text-align: center">Acquisizione dati</td>
+                <td style="text-align: center">Il sistema deve essere in grado di acquisire e integrare i dati provenienti dai dispositivi indossabili;
+                  per semplicità, i dati utilizzati nella web application sono stati forniti da alcuni Dataset che riportano, a loro volta, i dati effettivamente prelevati dai dispositivi fisici.</td>
               </tr>
               <tr>
-                <td style="text-align: center">Nome della funzionalità B</td>
-                <td style="text-align: center">Breve descrizione della funzionalità B</td>
+                <td style="text-align: center">Rappresentazione digitale degli atleti</td>
+                <td style="text-align: center">Creare una rappresentazione digitale accurata di ciascun atleta, comprendente dati fisiologici, metriche di attività fisica, capacità specifiche e prestazioni sportive.</td>
               </tr>
               <tr>
-                <td style="text-align: center">...</td>
-                <td style="text-align: center">...</td>
+                <td style="text-align: center">Personalizzazione degli allenamenti</td>
+                <td style="text-align: center">Utilizzare i suggerimenti del Digital Twin per creare piani di allenamento personalizzati e adattati alle esigenze specifiche di ciascun atleta, al fine di massimizzare le prestazioni.</td>
+              </tr>
+              <tr>
+                <td style="text-align: center">Dashboard scalabile</td>
+                <td style="text-align: center">Progettare una dashboard intuitiva ed estremamente scalabile, in grado di fornire una panoramica chiara e accessibile delle prestazioni degli atleti, adattabile alle diverse esigenze degli utenti, quali Amministratore, Coach e Atleti.</td>
+              </tr>
+              <tr>
+                <td style="text-align: center">Supporto alle decisioni</td>
+                <td style="text-align: center">Offrire strumenti di supporto alle decisioni, basati su dati oggettivi e predittivi, per facilitare il processo decisionale e la definizione di obiettivi per il raggiungimento delle migliori prestazioni possibili.</td>
               </tr>
             </tbody>
           </table>
 
 
-          <span class="anchor" id="architettura-dellinformazione"></span>
-          <h3>Architettura del sistema</h3>
-
-          <p>Inserire i diagrammi in grado di descrivere adeguatamente la struttura del vostro progetto e eventualmente i link ai repository in cui le varie componenti sono implementate</p>
-
-
-
         </div>
 
         <div class="subsection">
-          <span class="anchor" id="istruzioni"></span>
-          <h2>Istruzioni per far funzionare il prototipo</h2>
+          <span class="anchor" id="architettura"></span>
+          <h2>Architettura del sistema</h2>
+          <p>Il sistema è interamente distribuito sulla piattaforma Cloud Amazon Web Service, l'architettura è raffigurata dal seguente diagramma:</p>
+          <img src="/images/architettura%20iot.drawio.png" alt="Diagramma architettura sistema" width="600" height="547">
+          <p>Il sistema è composto dai seguenti componenti principali:</p>
+          <ul>
+            <li><strong>Front-End</strong>: Webapp sviluppata in Angular per consentire agli utenti d'interagire in maniera semplice e intuitiva con il sistema. È distribuita su un'istanza EC2
+            </li>
+            <p></p>
+            <li>
+              <strong>Back-End Autenticazione</strong>: È composto (come gli altri servizi back-end del sistema) da un web server sviluppato con Java Springboot che espone API REST per la gestione degli utenti, e da un database MongoDB per la loro corretta memorizzazione. Entrambi sono virtualizzati con Docker.
+              Qui è inoltre implementato Spring Security per la generazione e validazione di token JWT per garantire l'autenticazione degli utenti e la corretta autorizzazione di tutte le richieste del sistema.
+              Infatti, gli altri servizi back-end, che verranno di seguito elencati, quando ricevono una richiesta, ne inoltrano il token jwt a questo servizio per validarlo. È distribuito su un'istanza EC2.
+            </li>
+            <p></p>
+            <li>
+              <strong>Back-End Allenamenti</strong>: Si occupa della gestione di allenamenti e assegnazioni, e della loro corretta memorizzazione. È distribuito su un'istanza EC2.
+            </li>
+            <p></p>
+            <li><strong>Back-End HRV</strong>: Gestisce i risultati degli allenamenti, composti dalla metrica HRV Median NNI e dall'intensità dell'allenamento. È distribuito su un'istanza EC2.
+            </li>
+            <p></p>
+            <li>
+              <strong>API Gateway</strong>: Tutte le API dei servizi Back-End (e non solo) sono esposte attraverso il servizio AWS API Gateway.
+            </li>
+            <p></p>
+            <li>
+              <strong>Bucket S3</strong>: Nel bucket S3 di AWS sono depositati i dataset di input (che si suppone che siano generati e inviati dai dispositivi Polar),
+              un dataset di output che aggrega tutti i risultati, e uno impiegato per il training di un modello di classificazione. Tutti i dataset del bucket vengono utilizzati dalle funzioni Lambda di seguito elencate.
+            </li>
+            <p></p>
+            <li>
+              <strong>Funzione Lambda HRV Storage</strong>: È uno script Python Lambda che si avvia in automatico ogni volta che viene caricato un nuovo dataset di input, ovvero i risultati di un allenamento di un determinato atleta. all'interno del bucket S3.
+              Viene prelevato tale dataset, e avviata una serie di operazioni che culminano con il calcolo le relative metriche HRV, tra cui median NNI. Inoltre, lo script preleva dal bucket S3 un dataset che utilizza per addestrare un modello di classificazione, che permette successivamente
+              di associare al valore median NNI l'intensità dell'allenamento (Alta o Medio/Bassa). A questo punto, previa autenticazione (e conseguente ottenimento del token jwt), lo script invia il risultato al servizio HRV attraverso una richiesta POST.
+            </li>
+            <p></p>
+            <li>
+              <strong>Funzione Lambda HRV Real Time</strong>: Questo script Python Lambda può essere richiamato attraverso un'API REST esposta da API Gateway. Il suo scopo è quello di inviare, previa richiesta, al front-end
+              i risultati (simulati) in tempo reale di un allenamento in corso. Lo script, infatti, riceve in input l'intensità prevista dell'allenamento (alta o medio/bassa) e, in base ad essa, preleva dal bucket S3 il dataset contenente i risultati
+              parziali di un allenamento a intensità alta o medio/bassa. In maniera analoga allo script del punto precedente, calcola le metriche hrv, nello specifico median NNI, con l'intensità ad essa associata (anche qui, infatti, è stato addestrato un modello di classificazione).
+            </li>
+          </ul>
+        </div>
 
-          <p>Inserire tutti i passi per far funzionare il prototipo</p>
+        <div class="subsection">
+          <span class="anchor" id="frontend"></span>
+          <h2>Front-End</h2>
+          <a href="https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/wot-project-2022-2023-DigitalTwinFrontendAngular-ColellaSemeraro.git">Repository GitHub</a>
+          <p>Come già accennato, l'apparato di front-end del sistema è una webapp sviluppata in Angular.
+          <br>
+            Gli attori che interagiscono con la webapp sono: amministratore, coach e atleta. L'amministratore può creare nuovi coach, atleti e allenamenti, con la possibilità di modificarne alcuni attributi.
+            <br>
+            Per ogni coach (allenatore) di ogni squadra è definito il ruolo dei giocatori che può seguire (attaccante, difensore, centrocampista, portiere).
+            Ogni allenatore può seguire uno o più giocatori dello stesso ruolo e squadra, ed ogni calciatore può essere seguito soltanto da un coach.
+            Sulla base dei risultati precedenti, l'allenatore sceglie l'allenamento da assegnare all'atleta, supportato dal digital twin.
+            <br>
+            Gli allenamenti possono essere specifici per il ruolo del giocatore oppure generici. In ogni caso ad ogni allenamento è associata la relativa intensità (Alta, Medio/Bassa).
+            Nella fase di assegnamento, inoltre, può essere indicata la durata dell'allenamento, la presenza o meno di circuiti e la relativa durata.
+            <br>
+            L'atleta può prendere visione dell'allenamento assegnato e svolgerlo. Inoltre, è possibile consultare lo storico degli allenamenti assegnati e dei risultati, anche su grafico, sia per l'atleta che per il coach.
+          </p>
+          <p>Di seguito sono elencate le funzionalità offerte dalla webapp più nel dettaglo, per ogni ruolo.</p>
+          <h3>Amministratore</h3>
+          <ul>
+            <li><strong>Home:</strong> Qui è possibile vedere informazioni relative al numero di atleti, di squadre e di allenamenti memorizzati nel sistema.</li>
+            <p></p>
+            <li><strong>Gestione Atleti:</strong> Qui si può visualizzare l'elenco di tutti gli atleti, visualizzarne le informazioni nel dettaglio e modifcarne la squadra. In tal caso, è possibile subito assegnare un coach dello stesso ruolo della nuova squadra, se è disponibile.
+              <ul>Si possono, inoltre, creare nuovi atleti, specificando:
+                <li>Nome</li>
+                <li>Cognome</li>
+                <li>Squadra</li>
+                <li>Posizione in campo</li>
+                <li>Coach da assegnare (se disponibile, il coach viene selezionato automaticamente una volta definita la squadra)</li>
+                <li>Email</li>
+                <li>Data di nascita</li>
+                <li>Username</li>
+                <li>Password</li>
+                <li>Altezza in centimetri</li>
+                <li>Peso in chilogrammi</li>
+              </ul>
+            </li>
+            <p></p>
+            <li><strong>Gestione Coach:</strong> Qui si può visualizzare l'elenco di tutti i coach, visualizzarne le informazioni nel dettaglio e modifcarne ruolo allenato e squadra (soltanto se non seguono nessun atleta).
+              <ul>È possibile, inoltre, creare nuovi coach, specificando:
+                <li>Nome</li>
+                <li>Cognome</li>
+                <li>Email</li>
+                <li>Data di nascita</li>
+                <li>Username</li>
+                <li>Password</li>
+                <li>Squadra</li>
+                <li>Ruolo allenato</li>
+              </ul>
+            </li>
+            <p></p>
+            <li><strong>Gestione Allenamenti:</strong> Qui si può visualizzare l'elenco di tutti gli allenamenti, visualizzarne le informazioni e modificare il nome.
+              <ul>È possibile creare nuovi allenamenti, definendo:
+                <li>Nome</li>
+                <li>Tipo (Attaccante, Difensore, Portiere o Generale)</li>
+                <li>Intensità (Alta, Media, Bassa)</li>
+              </ul>
+            </li>
+          </ul>
+          <h3>Coach</h3>
+          <ul>
+            <li><strong>Home:</strong> Qui è possibile vedere informazioni relative al numero di atleti seguiti e la squadra.
+              Inoltre, se sono disponibili nuovi risultati relativi agli allenamenti degli atleti, viene visualizzato un avviso in merito, contenente l'elenco degli atleti con risultati nuovi da valutare.</li>
+            <p></p>
+            <li><strong>Gestione Atleti:</strong> Qui si può visualizzare l'elenco degli atleti seguiti, visualizzarne le informazioni nel dettaglio e modifcarne altezza e peso. Da qui, è possibile accedere allo storico degli allenamenti assegnati per ogni atleta.</li>
+            <p></p>
+            <li><strong>Allenamenti:</strong> In questa sezione si può visualizzare lo storico dei risultati degli allenamenti svolti dagli atleti seguiti. Se tali risultati non sono già stati valutati per assegnare allenamenti, è possibile assegnare all'atleta interessato un nuovo allenamento, basandosi sulle di essi.
+              Nello specifico, il digital twin fornisce una lista di allenamenti disponibili per l'assegnamento, effettuando un filtro in base all'intensità, che è comunque possibile ignorare semplicemente rimuovendolo.
+              Ad esempio, se un atleta ha svolto un allenamento molto intenso, in fase di assegnamento si potrà scegliere tra una lista di allenamenti con intensità medio/bassa per il ruolo allenato.
+              <br>
+              Per ogni assegnazione dell'allenamento, è possibile definirne la durata in minuti ed eventualmente il numero di circuiti e la loro durata.
+              <br>
+              SI può, inoltre, visualizzare graficamente i risultati degli allenamenti degli atleti. È possibile scaricare in formato .csv il resoconto di tutti i risultati degli allenamenti di tutti o dei singoli atleti, oltre al file in formato PDF del grafico.
+            </li>
+            <p></p>
+            <li><strong>Gestione Profilo:</strong> Qui puoi visualizzare le informazioni relative al tuo profilo, con la possibilità di modificare email e password.
+            </li>
+          </ul>
+          <h3>Atleta</h3>
+          <ul class="mt-4">
+            <li class="mt-3"><strong>Home:</strong> Qui è possibile vedere subito le informazioni relative all'allenamento assegnato nella data corrente, se è presente.</li>
+            <p></p>
+            <li class="mt-3"><strong>Allenamenti:</strong> Qui si può visualizzare lo storico degli allenamenti assegnati dal coach, con la possibilità di visualizzarli nel dettaglio.
+              <br>
+              Da qui è possibile accedere alla schermata di visualizzazione dello storico dei risultati degli allenamenti, con la possibilità di vederli su grafico, scaricalo in formato pdf, oppure scaricare il resoconto in formato .csv.
+            </li>
+            <p></p>
+            <li class="mt-3"><strong>Gestione Profilo:</strong> Qui è possibile visualizzare le informazioni relative al profilo, con la possibilità di modificare email e password.
+            </li>
+          </ul>
+        </div>
 
+        <div class="subsection">
+          <span class="anchor" id="back-end-autenticazione"></span>
+          <h2>Back-End Autenticazione</h2>
+          <a href="https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/wot-project-2022-2023-AuthBackEndService-ColellaSemeraro.git">Repository GitHub</a>
+          <p>È composto da un web server sviluppato con Java Springboot che espone API REST per la gestione degli utenti, e da un database MongoDB per la loro corretta memorizzazione. Entrambi sono virtualizzati con Docker.
+            Qui è inoltre implementato Spring Security per la generazione e validazione di token JWT per garantire l'autenticazione degli utenti e la corretta autorizzazione di tutte le richieste del sistema.
+            Infatti, gli altri servizi back-end, quando ricevono una richiesta, ne inoltrano il token jwt a questo servizio per validarlo.
+          </p>
+          <p>Di seguito sono elencate alcune delle API più significative:</p>
+          <ul>
+            <li><strong>api/users/authenticate (POST)</strong>: Richiede nel body un documento in formato JSON contenente username e password dell'utente. Se le credenziali sono corrette, restituisce un documento JSON contenente un token jwt con validità di 10 ore, altrimenti restituisce un errore 403.</li>
+            <p></p>
+            <li><strong>api/users/login (GET)</strong>: Gli altri servizi richiamano questa API quando devono verificare la validità di un token jwt. Se è valido, restituisce 200 OK e il ruolo dell'utente proprietario del token.</li>
+            <p></p>
+            <li><strong>api/users/atleta/ (POST)</strong>: Questa API salva nella collezione degli atleti del database MongoDB un nuovo atleta, con gli attributi definiti nel body.</li>
+            <p></p>
+            <li><strong>api/users/coach/ (POST)</strong>: Questa API salva all'interno della collezione dei coach database MongoDB un nuovo coach, con gli attributi definiti nel body.</li>
+          </ul>
+        </div>
+
+        <div class="subsection">
+          <span class="anchor" id="back-end-allenamenti"></span>
+          <h2>Back-End Allenamenti</h2>
+          <a href="https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/wot-project-2022-2023-TrainingBackEndService-ColellaSemeraro.git">Repository GitHub</a>
+          <p>È composto da un web server sviluppato con Java Springboot che espone API REST per la gestione degli allenamenti e delle loro assegnazioni, e da un database MongoDB per la loro corretta memorizzazione. Entrambi sono virtualizzati con Docker.
+          </p>
+          <p>Di seguito sono elencate alcune delle API più significative:</p>
+          <ul>
+            <li><strong>api/allenamenti/ (POST)</strong>: Questa API salva nella collezione degli allenamenti del database MongoDB un nuovo allenamento con gli attributi definiti nel body JSON.</li>
+            <p></p>
+            <li><strong>api/assegnazioni/{idCoach} (POST)</strong>: Questa API salva nella collezione delle assegnazioni degli allenamenti del database MongoDB una nuova assegnazione di un allenamento, con gli attributi definiti nel body.
+            Richiede come variabile del path l'ID del coach in quanto richiama a sua volta l'API GET <strong>api/users/atleta/findIdCoachByIdAtleta/{idAtleta}</strong> per verificare che ad assegnare un nuovo allenamento a un atleta sia effettivamente il coach che lo segue.</li>
+          </ul>
+        </div>
+
+        <div class="subsection">
+          <span class="anchor" id="back-end-hrv"></span>
+          <h2>Back-End HRV</h2>
+          <a href="https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/wot-project-2022-2023-HRVBackEndService-ColellaSemeraro.git">Repository GitHub</a>
+          <p>È composto da un web server sviluppato con Java Springboot che espone API REST per la gestione degli indici HRV, e da un database MongoDB per la loro corretta memorizzazione, entrambi virtualizzati con Docker.</p>
+          <p>Di seguito sono elencate alcune delle API più significative:</p>
+          <ul>
+            <li><strong>api/hrv/ (POST)</strong>: Questa API salva nel database MongoDB un nuovo oggetto HRV, con gli attributi definiti nel body. Lo script Lambda Python HRV Storage richiama questa API per salvare il valore median_nni calcolato e l'intensità ad esso associata.</li>
+            <p></p>
+            <li><strong>api/downloadCsv (POST)</strong> Richiede nel body una lista di oggetti HRV e restituisce un file in formato .csv contenente il resoconto dei risultati degli allenamenti, scaricabile dalla webapp del front-end.</li>
+          </ul>
+        </div>
+
+        <div class="subsection">
+          <span class="anchor" id="lambda-hrv-storage"></span>
+          <h2>Script Python Lambda HRV Storage</h2>
+          <a href="https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/wot-project-2022-2023-LambdaPythonScripts-ColellaSemeraro.git">Repository GitHub</a>
+          <p>Si tratta di una funzione Lambda di AWS eseguita con Python 3.10, e viene eseguita in automatico ogni volta che viene caricato un nuovo dataset di input nel bucket S3 'iotdigitaltwin'.
+          <br>
+            Il dataset viene prelevato e memorizzato in una lista, dunque lo script avvia una serie di operazioni che culminano con il calcolo le relative metriche HRV, tra cui median NNI. Inoltre, lo script preleva dal bucket S3 un dataset che utilizza per addestrare un modello di classificazione, che permette successivamente
+            di associare al valore median NNI l'intensità dell'allenamento (Alta o Medio/Bassa). A questo punto, previa autenticazione (e conseguente ottenimento del token jwt), lo script invia il risultato al servizio HRV attraverso una richiesta POST.
+            <br>
+            Di seguito è raffigurato il diagramma di sequenza dell'interazione dei componenti del sistema quando viene eseguito lo script.
+          </p>
+          <img src="/images/sequenceLambda.drawio.png" alt="Diagramma architettura sistema" width="600" height="547">
+          <p>Lo script, dunque, svolge nell'ordine le seguenti operazioni:</p>
+          <ul>
+            <li>Inizializza il client AWS S3.</li>
+            <li>Recupera il nome del bucket e della directory di interesse.</li>
+            <li>Scarica il file CSV più recente dal bucket S3 e legge la prima colonna dei dati (picchi R dell'ECG).</li>
+            <li>Scarica il file CSV di output, contenente tutti i risultati degli allenamenti.</li>
+            <li>Crea un modello di classificazione SVM con kernel lineare e lo addestra utilizzando dati di training.</li>
+            <li>Valuta il modello utilizzando dati di test e stampa le metriche di valutazione.</li>
+            <li>Calcola gli intervalli RR e identifica gli outliers.</li>
+            <li>Calcola le metriche HRV (Heart Rate Variability) nel dominio del tempo e delle frequenze.</li>
+            <li>Classifica l'intensità dell'attività fisica utilizzando il modello SVM.</li>
+            <li>Esegue l'autenticazione sul servizio di autenticazione e invia i risultati dell'analisi HRV al servizio HRV.</li>
+            <li>Modifica di conseguenza il file CSV di output e lo carica nuovamente nel bucket S3.</li>
+            <li>Stampa le metriche HRV calcolate.</li>
+          </ul>
+        </div>
+
+        <div class="subsection">
+          <span class="anchor" id="lambda-hrv-realtime"></span>
+          <h2>Script Python Lambda HRV Real Time</h2>
+          <a href="https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/wot-project-2022-2023-LambdaPythonScripts-ColellaSemeraro.git">Repository GitHub</a>
+          <p> Questa Lambda function eseguita con Python 3.10 può essere richiamata attraverso un'API REST esposta da API Gateway. Il suo scopo è quello di inviare, previa richiesta, al front-end
+            i risultati (simulati) in tempo reale di un allenamento in corso.
+            <br>
+            Lo script, infatti, riceve in input l'intensità prevista dell'allenamento (alta o medio/bassa) e, in base ad essa, preleva dal bucket S3 il dataset contenente i risultati
+            parziali di un allenamento a intensità alta o medio/bassa.
+            <br>
+            Lo script avvia una serie di operazioni che culminano con il calcolo le relative metriche HRV, tra cui median NNI. Inoltre, lo script preleva dal bucket S3 un dataset che utilizza per addestrare un modello di classificazione, che permette successivamente
+            di associare al valore median NNI l'intensità dell'allenamento (Alta o Medio/Bassa).</p>
+          <p>Le operazioni svolte dallo script possono riassumersi nei seguenti passi:</p>
+          <ul>
+            <li>In base al valore dell'input <code>integer</code>, sceglie quale file CSV scaricare da AWS S3 (<code>inputhighintensity.csv</code> o <code>inputlowintensity.csv</code>).</li>
+            <li>Scarica i dati RR intervals dal file CSV e il dataset per la classificazione SVM dal bucket S3.</li>
+            <li>Divide il dataset in set di training e test, crea un modello SVM con kernel lineare, lo addestra e lo valuta.</li>
+            <li>Aggiunge valori casuali ai dati RR intervals.</li>
+            <li>Calcola gli intervalli NN normalizzati e calcola le metriche HRV nel dominio del tempo e delle frequenze.</li>
+            <li>Classifica l'intensità dell'attività fisica utilizzando il modello SVM.</li>
+            <li>Crea una risposta JSON contenente il valore della mediana degli intervalli NN normalizzati e l'intensità dell'attività fisica e la restituisce come output della funzione Lambda.</li>
+          </ul>
         </div>
       </section>
       <footer>

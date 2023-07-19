@@ -1,7 +1,7 @@
 body {
     font: 14px/22px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #666;
-    background: #eae6d1;
+    background: lightgrey;
 }
 
 h1 {
@@ -24,7 +24,7 @@ h3 {
 
 th {
     text-align: left;
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-bottom: 1px solid #e5e5e5;
     color: #444;
 }
@@ -32,12 +32,12 @@ th {
 td {
     text-align: left;
     padding: 5px 10px;
-    border-bottom: 1px solid #e5e5e5;
-    border-right: 1px solid #ffcc00;
+    border-bottom: 1px solid darkblue;
+    border-right: 1px solid darkblue;
 }
 
 td:first-child {
-    border-left: 1px solid #ffcc00;
+    border-left: 1px solid darkblue;
 }
 
 
@@ -86,8 +86,8 @@ header p {
     margin-right: -382px;
     position: fixed;
     top: 115px;
-    background: #ffcc00;
-    border: 1px solid #f0b500;
+    background: lightblue;
+    border: 1px solid darkslateblue;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
     border-radius: 0px 2px 2px 0px;
     padding-right: 10px;
@@ -98,7 +98,6 @@ header p {
     background: #ffe788;
     border-radius: 2px;
     box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-    background-color: #FFE788;
     margin-left: 5px;
     padding: 10px 12px;
     margin-top: 6px;
@@ -123,8 +122,15 @@ header p {
     margin-top: 6px;
     line-height: 14px;
     font-size: 14px;
-    background-color: #FFE788;
+    background-color: cadetblue;
+    border-color: darkcyan;
 }
+
+#banner .button.fork:hover {
+    background-color: lightcyan;
+    color: black;
+}
+
 
 
 #banner #logo {
